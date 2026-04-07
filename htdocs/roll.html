@@ -29,18 +29,41 @@
 			#roll div{
 				width: 200px;
 				height: 200px;
+				position: relative;
 			}
 			#roll div:first-of-type{
 				background-color: red;
+				top: -381px;
+			}
+			#roll:hover div:first-of-type{
+				transform-origin: top;
+				transform: skew(-30deg);
 			}
 			#roll div:nth-of-type(2){
 				background-color: yellow;
-				}
+				top: -581px;
+				left: 200px;
+			}
+			#roll:hover div:nth-of-type(2){
+				transform-origin: top;
+				transform: skew(30deg);
+			}
 			#roll div:nth-of-type(3){
 				background-color: blue;
+				top: -581px;
+			}
+			#roll:hover div:nth-of-type(3){
+				transform-origin: bottom;
+				transform: skew(30deg);
 			}
 			#roll div:last-of-type{
  				background-color: green;
+				 left: 200px;
+				 top: -781px;
+			}
+			#roll:hover div:last-of-type{
+				transform-origin: bottom;
+				transform: skew(-30deg);
 			}
 			p {
 				text-align: center;
